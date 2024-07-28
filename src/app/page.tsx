@@ -19,9 +19,9 @@ const Home = () => {
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
-              Soy un programador web con experiencia en el desarrollo de
-              aplicaciones y sistemas complejos utilizando una variedad de
-              tecnologías modernas.
+              Programador web con experiencia en el desarrollo de aplicaciones y
+              sistemas complejos utilizando una variedad de tecnologías
+              modernas.
             </p>
             {/* btn and socials */}
             {/* <div className="flex flex-col xl:flex-row items-center gap-8">
