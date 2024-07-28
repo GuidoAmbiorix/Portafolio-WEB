@@ -21,54 +21,23 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Lista de animes con FramerMotion",
+    title: "Projecto 1",
     description: "",
     stack: [
       {
-        name: "Html 5",
+        name: "Nextjs",
       },
       {
-        name: "Javascript",
+        name: "FramerMotion",
+      },
+      {
+        name: "TailWind",
       },
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "frontend",
-    title: "project 2",
-    description: "",
-    stack: [
-      {
-        name: "Html 5",
-      },
-      {
-        name: "Javascript",
-      },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "frontend",
-    title: "project 3",
-    description: "",
-    stack: [
-      {
-        name: "Html 5",
-      },
-      {
-        name: "Javascript",
-      },
-    ],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    image: "/assets/work/AnimeListProject.png",
+    live: "https://anime-list-ten-tan.vercel.app/",
+    github: "https://github.com/GuidoAmbiorix/AnimeList",
   },
 ];
 
@@ -131,7 +100,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.live}>
+                <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

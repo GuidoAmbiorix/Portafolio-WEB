@@ -18,10 +18,10 @@ const links = [
     name: "Resumen",
     path: "/resume",
   },
-  // {
-  //   name: "work",
-  //   path: "/work",
-  // },
+  {
+    name: "Trabajos",
+    path: "/work",
+  },
   {
     name: "Contacto",
     path: "/contact",
