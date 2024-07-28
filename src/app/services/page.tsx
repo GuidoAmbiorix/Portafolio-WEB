@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web  development",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Desarrollo WEB",
+    description: "Desarrollo de aplicaciones WEB usando tecnologias modernas.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Diseño UI/UX",
+    description: "Diseño de aplicaciones WEB Y Moviles con figma.",
     href: "",
   },
 ];

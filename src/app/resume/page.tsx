@@ -1,7 +1,14 @@
 "use client";
 
 import { FaHtml5, FaCss3, FaFigma } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiAngular,
+  SiFlutter,
+  SiNgrx,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 
 //Components
@@ -16,32 +23,33 @@ import {
 
 // about data
 const about = {
-  title: "About me",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  title: "Acerca de mi",
+  description:
+    "Soy un programador web con experiencia en el desarrollo de aplicaciones y sistemas complejos utilizando una variedad de tecnologías modernas. Soy una persona en continuo aprendizaje, apasionado por la programación y los retos diarios. A lo largo de mi carrera, he desarrollado y mantenido aplicaciones web robustas y escalables, implementando buenas prácticas de desarrollo y garantizando una experiencia de usuario óptima.",
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Nombre",
       fieldValue: "Guido Ambiorix",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Telefono",
       fieldValue: "(+1) 849-455-5317",
     },
     {
-      fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldName: "Experiencia",
+      fieldValue: "2+ años",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "Dominican",
+      fieldName: "Nacionalidad",
+      fieldValue: "Dominicana",
     },
     {
-      fieldName: "Email",
+      fieldName: "Correo",
       fieldValue: "guidoambiorix@gmail.com",
     },
     {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldName: "Idiomas",
+      fieldValue: "Español, Ingles",
     },
   ],
 };
@@ -49,13 +57,13 @@ const about = {
 // experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  title: "Mi Experiencia",
+  description: "",
   items: [
     {
       company: "Junta Central Electoral (JCE)",
-      position: "Full Stack Developer",
-      duration: "2022 - present",
+      position: "Desarrollador Full Stack",
+      duration: "2022 - Presente",
     },
   ],
 };
@@ -63,20 +71,50 @@ const experience = {
 // educational data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  title: "Mi educaciòn",
+  description: "",
   items: [
     {
       institution: "UNAPEC",
-      degree: "System Engineering",
+      degree: "Ingenieria en sistemas de computación",
       duration: "2018-2023",
+    },
+    {
+      institution: "ITLA",
+      degree: "Diplomado en Programación Web en Javascript ",
+      duration: "2021",
+    },
+    {
+      institution: "UDEMY",
+      degree: "Typescript: Tu Completa Guía y Manual de mano",
+      duration: "2022",
+    },
+    {
+      institution: "UDEMY",
+      degree: "RXJS 7 and Observables: Introduction",
+      duration: "2023",
+    },
+    {
+      institution: "UDEMY",
+      degree: "The Modern Angular Bootcamp",
+      duration: "2023",
+    },
+    {
+      institution: "UDEMY",
+      degree: "Microsoft SQL Server Reporting Services (2022 Edition)",
+      duration: "2024",
+    },
+    {
+      institution: "UDEMY",
+      degree: "Flutter - Mòvil: De cero a experto - Ediciòn 2023:",
+      duration: "2023",
     },
   ],
 };
 
 const skills = {
-  title: "My skills",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  title: "Mis habilidades",
+  description: "",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -91,12 +129,28 @@ const skills = {
       name: "Typescript",
     },
     {
+      icon: <SiAngular />,
+      name: "Angular",
+    },
+    {
+      icon: <SiFlutter />,
+      name: "Flutter",
+    },
+    {
+      icon: <FaFigma />,
+      name: "Figma",
+    },
+    {
       icon: <SiNextdotjs />,
       name: "Nextjs",
     },
     {
       icon: <SiTailwindcss />,
       name: "Tailwind",
+    },
+    {
+      icon: <SiNgrx />,
+      name: "NGRX",
     },
   ],
 };
@@ -117,10 +171,10 @@ function Resume() {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="experience">Experiencia</TabsTrigger>
+            <TabsTrigger value="education">Educación</TabsTrigger>
+            <TabsTrigger value="skills">Habilidades</TabsTrigger>
+            <TabsTrigger value="about">Acerca de mi</TabsTrigger>
           </TabsList>
 
           {/* content */}
@@ -170,10 +224,10 @@ function Resume() {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-5"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <span className="text-xl max-w-[290px] min-h-[60px] text-center lg:text-left">
+                          <span className="text-xl max-w-[290px] min-h-[70px] text-center lg:text-left">
                             {item.degree}
                           </span>
                           <div className="flex items-center gap-3">
@@ -228,10 +282,10 @@ function Resume() {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-x-[200px] max-w-[600px]">
                   {about.info.map((item, index) => {
                     return (
                       <li
@@ -239,7 +293,7 @@ function Resume() {
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
                         <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-white text-xl">
+                        <span className="text-white text-[15px]">
                           {item.fieldValue}
                         </span>
                       </li>

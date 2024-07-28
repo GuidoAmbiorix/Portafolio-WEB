@@ -20,17 +20,17 @@ import { motion } from "framer-motion";
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: "Phone",
+    title: "Telefono",
     description: "(+1) 849-455-5317",
   },
   {
     icon: <FaEnvelope />,
-    title: "Email",
+    title: "Correo",
     description: "guidoambiorix@gmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Address",
+    title: "Direcciòn",
     description:
       "Santo domingo, km 23, autopista duarte,ciudad satelite, manzana 68#4",
   },
