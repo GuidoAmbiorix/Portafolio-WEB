@@ -10,7 +10,12 @@ const Photo = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+
+          transition: {
+            delay: 2,
+            duration: 0.4,
+            ease: "easeIn",
+          },
         }}
       >
         {/*image*/}
@@ -49,13 +54,18 @@ const Photo = () => {
             strokeLinejoin="round"
             initial={{ strokeDasharray: "24 10 0 0" }}
             animate={{
-              strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
-              rotate: [120, 360],
+              strokeDasharray: [
+                "10 20 30 50",
+                "60 70 80 90",
+                "100 110 120 130",
+              ],
+              rotate: [180, 360],
             }}
             transition={{
-              duration: 20,
+              duration: 30,
               repeat: Infinity,
               repeatType: "reverse",
+              damping: 40,
             }}
           />
         </motion.svg>
