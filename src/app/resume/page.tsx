@@ -269,10 +269,10 @@ function Resume() {
                                     "20%",
                                     "20%",
                                   ],
-                                  rotate: [0, 0, 270, 270, 0],
+                                  rotate: [0, 180, 360, 180, 0],
                                 }}
                                 transition={{
-                                  duration: 2,
+                                  duration: 1,
                                 }}
                                 className="text-6xl group-hover:text-accent transition-all duration-300 "
                               >
