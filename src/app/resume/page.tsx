@@ -260,13 +260,19 @@ function Resume() {
                           <Tooltip delayDuration={100}>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
                               <motion.div
-                                whileHover={{
+                                whileInView={{
                                   scale: [1, 1.4, 1.4, 1, 1],
-                                  border: ["20%", "20%", "50%", "20%", "20%"],
+                                  borderRadius: [
+                                    "20%",
+                                    "20%",
+                                    "50%",
+                                    "20%",
+                                    "20%",
+                                  ],
                                   rotate: [0, 0, 270, 270, 0],
                                 }}
                                 transition={{
-                                  duration: 1,
+                                  duration: 2,
                                 }}
                                 className="text-6xl group-hover:text-accent transition-all duration-300 "
                               >

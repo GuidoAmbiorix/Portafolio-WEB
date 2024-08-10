@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -37,14 +38,16 @@ const Home = () => {
                 <FiDownload className="text-xl"></FiDownload>
               </Button>
                */}
-              <a
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1 }}
                 href="/cv.pdf"
                 download="cv.pdf"
-                className="border border-accent p-3 rounded-[100px] text-accent flex gap-4 items-center"
+                className="border border-accent p-3 rounded-[100px] text-accent flex gap-4 items-center hover:bg-accent hover:text-primary"
               >
                 <span>Descargar CV</span>
                 <FiDownload className="text-xl"></FiDownload>
-              </a>
+              </motion.a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"

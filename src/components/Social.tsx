@@ -2,6 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/GuidoAmbiorix" },
@@ -18,7 +19,11 @@ interface SocialProps {
 
 const Social: React.FC<SocialProps> = ({ containerStyles, iconStyles }) => {
   return (
-    <div className={containerStyles}>
+    <motion.div
+      className={containerStyles}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 1 }}
+    >
       {socials.map((item, index) => {
         return (
           <Link key={index} href={item.path} className={iconStyles}>
@@ -26,7 +31,7 @@ const Social: React.FC<SocialProps> = ({ containerStyles, iconStyles }) => {
           </Link>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 
