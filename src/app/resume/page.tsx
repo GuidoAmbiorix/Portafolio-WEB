@@ -218,7 +218,7 @@ function Resume() {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[400px]" autoFocus>
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
@@ -259,9 +259,19 @@ function Resume() {
                         <TooltipProvider>
                           <Tooltip delayDuration={100}>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300 ">
+                              <motion.div
+                                whileHover={{
+                                  scale: [1, 1.4, 1.4, 1, 1],
+                                  border: ["20%", "20%", "50%", "20%", "20%"],
+                                  rotate: [0, 0, 270, 270, 0],
+                                }}
+                                transition={{
+                                  duration: 1,
+                                }}
+                                className="text-6xl group-hover:text-accent transition-all duration-300 "
+                              >
                                 {skill.icon}
-                              </div>
+                              </motion.div>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p className="capitalize">{skill.name}</p>
