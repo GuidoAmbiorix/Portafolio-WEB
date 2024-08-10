@@ -8,16 +8,6 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 const Home = () => {
-  const pdfUrl =
-    "https://drive.google.com/file/d/1_1014DUQ_G0ds56m4LSKk8slwsi_SG8z/view?usp=sharing"; // Path to your PDF file in the public directory
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "curriculum.pdf";
-    link.click();
-  };
-
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -37,7 +27,7 @@ const Home = () => {
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
@@ -46,7 +36,15 @@ const Home = () => {
                 <span>Descargar CV</span>
                 <FiDownload className="text-xl"></FiDownload>
               </Button>
-
+               */}
+              <a
+                href="/cv.pdf"
+                download="cv.pdf"
+                className="border border-accent p-3 rounded-[100px] text-accent flex gap-4 items-center"
+              >
+                <span>Descargar CV</span>
+                <FiDownload className="text-xl"></FiDownload>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
