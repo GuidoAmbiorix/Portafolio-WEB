@@ -11,12 +11,12 @@ const services = [
     description: "Desarrollo de aplicaciones WEB usando tecnologias modernas.",
     href: "",
   },
-  {
-    num: "02",
-    title: "Diseño UI/UX",
-    description: "Diseño de aplicaciones WEB Y Moviles con figma.",
-    href: "",
-  },
+  // {
+  //   num: "02",
+  //   title: "Diseño UI/UX",
+  //   description: "Diseño de aplicaciones WEB Y Moviles con figma.",
+  //   href: "",
+  // },
 ];
 
 const Services = () => {
