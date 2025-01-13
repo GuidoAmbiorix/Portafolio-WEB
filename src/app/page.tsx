@@ -6,11 +6,18 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
+import Services from "./services/page";
+import { useRef } from "react";
+import Resume from "./resume/page";
+import Contact from "./contact/page";
+import Work from "./work/page";
 
 const Home = () => {
   return (
-    <section className="h-full">
+    <>
+    <section 
+    className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
@@ -65,6 +72,9 @@ const Home = () => {
       </div>
       <Stats />
     </section>
+    
+    </>
+
   );
 };
 

@@ -21,23 +21,24 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Lista de animes con Framer Motion",
+    category: "Notion (Clone)",
     title: "Projecto 1",
     description: "",
     stack: [
       {
-        name: "Nextjs",
+        name: "Vue",
       },
       {
-        name: "FramerMotion",
+        name: "Pinia",
       },
       {
-        name: "TailWind",
+        name: "Daisy UI",
       },
     ],
-    image: "/assets/work/AnimeListProject.png",
-    live: "https://anime-list-ten-tan.vercel.app/",
-    github: "https://github.com/GuidoAmbiorix/AnimeList",
+    image: "/assets/work/NotionClone.png",
+    live: "https://heartfelt-wisp-2adbe4.netlify.app",
+    github:
+      "https://github.com/GuidoAmbiorix/Vue-course/tree/main/06-projects-app",
   },
 ];
 

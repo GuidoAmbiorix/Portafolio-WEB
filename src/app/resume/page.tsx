@@ -8,6 +8,8 @@ import {
   SiAngular,
   SiFlutter,
   SiNgrx,
+  SiVuetify,
+  SiVuedotjs,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -133,6 +135,14 @@ const skills = {
       name: "Angular",
     },
     {
+      icon: <SiNextdotjs />,
+      name: "Nextjs",
+    },
+    {
+      icon: <SiVuedotjs />,
+      name: "Vue",
+    },
+    {
       icon: <SiFlutter />,
       name: "Flutter",
     },
@@ -140,10 +150,7 @@ const skills = {
       icon: <FaFigma />,
       name: "Figma",
     },
-    {
-      icon: <SiNextdotjs />,
-      name: "Nextjs",
-    },
+
     {
       icon: <SiTailwindcss />,
       name: "Tailwind",
