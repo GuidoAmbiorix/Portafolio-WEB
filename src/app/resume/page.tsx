@@ -64,8 +64,13 @@ const experience = {
   items: [
     {
       company: "Junta Central Electoral (JCE)",
-      position: "Desarrollador Full Stack",
-      duration: "2022 - Presente",
+      position: "Desarrollador Junior Full Stack",
+      duration: "2022 - 2025",
+    },
+    {
+      company: "Asociacion Dominicana de Rehabilitacion (ADR)",
+      position: "Desarrollador Senior Full Stack",
+      duration: "2025 - Presente",
     },
   ],
 };
